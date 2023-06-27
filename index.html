@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <section>
+        <div class="female">
+        <img id="girlimage" src="/image/female.png" alt="">
+        </div>
+        
+        <div class="headline1" id="headline">
+            <img src="/image/headline1.png" alt="">
+        </div>
+        <div class="headline2" id="headline2">
+            <img src="/image/headline2.png" alt="">
+        </div>
+        <div class="subheadline" id="subheadline">
+            <img src="/image/subheadline.png" alt="">
+        </div>
+        <div class="button" id="button">
+          <img src="/image/replay.png" alt="">
+        </div>
+        <div class="button2" id="button2">
+          <a href="https://chat.openai.com/"> <img src="/image/learnmore.png" alt=""></a>
+          </div>
+          <div class="logo" id="logo">
+            <img src="/image/logo.png" alt="">
+          </div>
+    </section>
+</body>
+
+<script>
+   function fadeInThenOut(element, fadeInDuration, waitDuration, fadeOutDuration) {
+  element.style.opacity = '0';
+
+  setTimeout(function() {
+    element.style.opacity = '1';
+
+    setTimeout(function() {
+      element.style.opacity = '0';
+    }, fadeOutDuration);
+  }, fadeInDuration);
+}
+const image = document.getElementById('girlimage');
+fadeInThenOut(image, 2000, 4000, 2000); // Fade in: 1000ms, Wait: 2000ms, Fade out: 1000ms
+
+/// others
+function fadeInImage(element, duration) {
+  element.style.opacity = '0';
+
+  setTimeout(function() {
+    element.style.opacity = '1';
+  }, duration);
+}
+
+const image5 = document.getElementById('subheadline');
+fadeInImage(image5, 5000); // Fade in: 2000ms
+const image6 = document.getElementById('button');
+fadeInImage(image6, 7000); // Fade in: 2000ms
+const image7 = document.getElementById('button2');
+fadeInImage(image7, 6000); // Fade in: 2000ms
+
+
+
+
+/////////// Headline 1
+function slideInFromLeft(element, slideInDuration,  scaleDuration, duration) {
+  element.style.opacity = '1';
+  element.style.transform = 'translateX(0) scale(1)';
+
+  setTimeout(function() {
+    //element.style.opacity = '0';
+    element.style.transform = ' scale(0)';
+  }, slideInDuration + scaleDuration);
+}
+
+const image1 = document.getElementById('headline');
+slideInFromLeft(image1,1000,2000);
+
+
+
+//headline2
+
+function slideFromRightToLeft(element, duration) {
+  element.style.opacity = '1';
+  element.style.transform = 'translateX(0)';
+
+  setTimeout(function() {
+    element.style.transform = 'translateX(0)';
+  }, duration);
+}
+
+const image3 = document.getElementById('headline2');
+slideFromRightToLeft(image3,9000); // Slide from right to left: 2000ms
+const image8 = document.getElementById('logo');
+slideFromRightToLeft(image8,9000);
+</script>
+</html>

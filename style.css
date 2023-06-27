@@ -1,0 +1,94 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    height: 1000px;
+
+}
+section{
+   text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.644);
+}
+.female{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -15rem;
+    left: 20rem;
+}
+#girlimage {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .headline1{
+    position: relative;
+    top: -100%;
+  }
+
+  /******************** headline *******************/
+  #headline {
+    opacity: 0;
+    transform: translateX(-500%) scale(1);
+    transition: opacity 1s, transform 3s ease-in;
+  }
+  .headline2{
+    position: relative;
+    top: -135rem;
+    z-index: 999;
+  }
+  #headline2 {
+    opacity: 0;
+  transform: translateX(500%);
+  transition: opacity 1s, transform 5s ease-in;
+  }
+  #logo {
+    opacity: 0;
+    transform: translateX(550%);
+    transition: opacity 1s, transform 6s ease-in;
+  }
+  .subheadline{
+    position: relative;
+    top: -182rem;
+    z-index: 999;
+  }
+  .button  img{
+    position: relative;
+    top: -200rem;
+   width: 500px;
+   height: 110px;
+    
+  }
+  #subheadline {
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  #button{
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  #button2{
+    opacity: 0;
+    transition: opacity 2s;
+  }
+  .button2  img{
+    position: relative;
+    top: -270rem;
+   width: 500px;
+   height: 110px;
+  }
+  #logo{
+    position: relative;
+    top: -369rem;
+    width: -70%;
+    left: 18rem;
+  }
+  #logo img{
+    width: 400px;
+    height: 400px;
+
+  }
+  
